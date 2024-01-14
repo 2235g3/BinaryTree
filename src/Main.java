@@ -104,7 +104,7 @@ public class Main {
             System.out.println(sortedNode.val);
             sortedNode.traversed = true;
         }
-        else if (sortedNode.left.traversed && sortedNode.right.traversed) {
+        else if (sortedNode.left != null && sortedNode.left.traversed && sortedNode.right.traversed) {
             System.out.println(sortedNode.val);
             sortedNode.traversed = true;
         }
